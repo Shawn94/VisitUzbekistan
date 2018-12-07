@@ -16,6 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CitiesActivity" />
+        <activity android:name=".CitiesInnerActivity" />
+        <activity android:name=".ExperiencesActivity" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".RestaurantsActivity" />
+        <activity android:name=".RestaurantsInnerActivity" />
+        <activity android:name=".SightsActivity" />
+        <activity android:name=".SightsInnerActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".HotelsActivity" />
+        <activity android:name=".RentalCarActivity" />
+        <activity android:name=".VideosActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".MainMapActivity"></activity>
     </application>
 
 </manifest>
