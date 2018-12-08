@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "687867214816",
+    "firebase_url": "https://androidvisituzbekistan.firebaseio.com",
+    "project_id": "androidvisituzbekistan",
+    "storage_bucket": "androidvisituzbekistan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687867214816:android:11d81a686882bb94",
+        "android_client_info": {
+          "package_name": "com.example.dadajonjurakuziev.visituzbekistan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687867214816-h4s3o9vsa848vdtpl0g9p2g79kcn8knp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dadajonjurakuziev.visituzbekistan",
+            "certificate_hash": "c5a3fe87ac97ce52adb47e018083de72d58b9d11"
+          }
+        },
+        {
+          "client_id": "687867214816-7teean60favkl80r8aho2e5kediil84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKlVeKTCodLnbeixfPa9v9x35b5xoasts"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687867214816-7teean60favkl80r8aho2e5kediil84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
