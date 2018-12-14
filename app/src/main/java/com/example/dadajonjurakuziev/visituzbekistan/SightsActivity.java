@@ -165,59 +165,59 @@ public class SightsActivity extends AppCompatActivity {
                                 "\nAs with other Muslim mausoleums, the stones are just markers; the actual crypts are in a chamber beneath. In the centre is Timur’s stone, once a single block of dark-green jade. In 1740 the warlord Nadir Shah carried it off to Persia, where it was accidentally broken in two – from which time Nadir Shah is said to have had a run of very bad luck, including the near death of his son. At the urging of his religious advisers he returned the stone to Samarkand and, of course, his son recovered.\n" +
                                 "\nThe plain marble marker to the left of Timur’s is that of Ulugbek; to the right is that of Mir Said Baraka, one of Timur’s spiritual advisors. In front lies Mohammed Sultan. The stones behind Timur’s mark the graves of his sons Shah Rukh (the father of Ulugbek) and Miran Shah. Behind these lies Sheikh Seyid Umar, the most revered of Timur’s teachers, said to be a descendant of the Prophet Mohammed. Timur ordered Gur-e-Amir built around Umar’s tomb.\n" +
                                 "\nThe Soviet anthropologist Mikhail Gerasimov opened the crypts in 1941 and, among other things, confirmed that Timur was tall (1.7m) and lame in the right leg and right arm (from injuries suffered when he was 25) – and that Ulugbek died from being beheaded. According to every tour guide’s favourite anecdote, he found on Timur’s grave an inscription to the effect that ‘whoever opens this will be defeated by an enemy more fearsome than I’. The next day, 22 June, Hitler attacked the Soviet Union."));
-        sights.add(
-                new Sights(1,
-                        "Shah-i-Zinda",
-                        "islamic tomb in Samarkand",
-                        R.drawable.sights_samarkand_shah_i_zinda,
-                        "Hours : 7AM - 7PM\nPrice : admission 10,000 UZS\n            camera 7,000 UZS\nAddress : Shah-i-Zinda St, Samarkand\nTel : (+998)71 233 53 82",
-                        "Samarkand’s most moving and beloved site is this stunning avenue of mausoleums, which contains some of the richest tilework in the Muslim world. The name, which means ‘Tomb of the Living King’, refers to its original, innermost and holiest shrine – a complex of cool, quiet rooms around what is probably the grave of Qusam ibn-Abbas, who is said to have brought Islam to this area in the 7th century. The most stunning Timurid-era tilework dates from 14th and 15th centuries.\n" +
-                                "\nA shrine to Qusam, a cousin of the Prophet Mohammed, existed here on the edge of Afrosiab for around seven centuries before Timur (Tamerlane) and later Ulugbek buried their family and favourites near the sanctity of the original shrine.\n" +
-                                "\nThe most beautiful tomb is the Shodi Mulk Oko Mausoleum (1372), resting place of a sister and niece of Timur, second on the left after the entry stairs. The exquisite majolica and terracotta work here – notice the minuscule amount of space between the tiles – was of such exceptional quality that it merited almost no restoration.\n" +
-                                "\nAfter remarkably surviving more than seven centuries with only minor touch-up work, many of the tombs were aggressively and controversially restored in 2005. As a result, much of the brilliant mosaic, majolica and terracotta work you see today is not original.\n" +
-                                "\nShah-i-Zinda is an important place of pilgrimage, so enter with respect and dress conservatively. Just outside the entrance are the foundations of a 15th-century tahorathana (bathhouse). At the end of the pathway between the mausoleums, the complex opens up into Samarkand's main cemetery, which is a fascinating place to walk."));
-        sights.add(
-                new Sights(1,
-                        "Bibi-Khanym Mosque",
-                        "mosque in Samarkand",
-                        R.drawable.sights_samarkand_bibi_khanym,
-                        "Hours : 8AM - 8PM\nPrice : admission 22,000 UZS\n            camera 5,000 UZS\nAddress : Bibikhonim St, Samarqand\nTel : (+998)97 793 46 75",
-                        "The enormous congregational Bibi-Khanym Mosque, northeast of the Registan, was financed from the spoils of Timur's invasion of India and must have been the jewel of his empire. Once one of the Islamic world’s biggest mosques (the cupola of the main mosque is 41m high and the pishtak or entrace portal, 38m), it pushed contemporary construction techniques to the limit, so much so that the dome started crumbling even before construction had finished.\n" +
-                                "\nThe mosque partially collapsed in an earthquake in 1897 before being rebuilt in the 1970s and more rapidly in the years after independence.\n" +
-                                "\nLegend says that Bibi-Khanym, Timur’s Chinese wife, ordered the mosque built as a surprise while he was away. The architect fell madly in love with her and refused to finish the job unless he could give her a kiss. The smooch left a mark and Timur, on seeing it, executed the architect and decreed that women should henceforth wear veils so as not to tempt other men.\n" +
-                                "\nThe interior courtyard contains an enormous marble Quran stand that lends some scale to the place. Local lore has it that any woman who crawls under the stand will have lots of children. The courtyard also contains two smaller mosques. The one on the left as you enter through the enormous main gate has an impressive unrestored interior festooned with Arabic calligraphy."));
-        sights.add(
-                new Sights(1,
-                        "Tilla-Kari Medressa",
-                        "islamic Site in Samarkand",
-                        R.drawable.sights_samarkand_tilla_kari,
-                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
-                        "On the northern side of the Registan is the Tilla-Kari (Gold-Covered) Medressa, completed in 1660, with a pleasant, gardenlike courtyard. The highlight here is the mosque, which is on the left-hand side of the courtyard and is stunningly decorated with blue and gold to symbolise Samarkand’s wealth. The mosque’s delicate ceiling, oozing gold leaf, is flat but its tapered design makes it look domed from the inside. The result is breathtaking.\n" +
-                                "\nInside the mosque is a fascinating picture gallery featuring blown-up B&W photos of old Samarkand. Several shops sell prints of these old photos."));
-        sights.add(
-                new Sights(1,
-                        "Ulugbek Medressa",
-                        "islamic site in Samarkand",
-                        R.drawable.sights_samarkand_ulugbek,
-                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
-                        "The Ulugbek Medressa, on the western side of the Registan, is the square's original medressa, finished in 1420 under Ulugbek who is said to have taught mathematics here (the stars on the portal reflect Ulugbek's love of astronomy). Beneath the little corner domes were lecture halls, now housing displays on Ulugbek, and at the rear there is a large mosque with a beautiful blue painted interior and an austere teaching room to one side.\n" +
-                                "\nPolice guards occasionally offer to clandestinely escort visitors to the top of the medressa's minaret for around US$10."));
-        sights.add(
-                new Sights(1,
-                        "Sher Dor Medressa",
-                        "islamic site in Samarkand",
-                        R.drawable.sights_samarkand_sherdor,
-                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
-                        "The entrance portal of the Registan's Sher Dor (Lion) Medressa, opposite the Ulugbek Medressa and finished in 1636, is decorated with roaring felines that look like tigers but are meant to be lions. The lions, the deer they are chasing and the Mongolian-faced, Zorostrian-inspired suns rising from their backs are all unusual, flouting Islamic prohibitions against the depiction of live animals. It took 17 years to build but hasn’t held up as well as the Ulugbek Medressa, built in just three years."));
-        sights.add(
-                new Sights(1,
-                        "Afrosiab Museum",
-                        "museum in Samarkand",
-                        R.drawable.sights_samarkand_afrosiab,
-                        "Hours : 9AM - 6PM\nPrice : admission 22,000 UZS\n            guide 20,000 UZS\nAddress : Tashkent Road, Samarkand",
-                        "The Afrosiab Museum was built around one of Samarkand’s more important archaeological finds, a chipped 7th-century fresco of the Sogdian King Varkhuman (r 650–670) receiving ranks of foreign dignitaries (including Chinese envoys carrying silk), while sitting astride elephants, camels and horses. You’ll see reproductions of this iconic fresco throughout the country. It was only discovered in 1965 during the construction of Toshkent Road.\n" +
-                                "\nThe left-hand wall depicts red- and white-faced dignitaries leading geese and horses on a sacrificial procession, while the right wall shows the Chinese Tang emperor Gaozong hunting panthers.\n" +
-                                "\nThe 2nd floor of the museum deals with the 11 distinct layers of the archaeological site; at the time of research it was closed due to water damage. It's worth catching the short film explaining the murals and their French-sponsored renovation."));
+//        sights.add(
+//                new Sights(1,
+//                        "Shah-i-Zinda",
+//                        "islamic tomb in Samarkand",
+//                        R.drawable.sights_samarkand_shah_i_zinda,
+//                        "Hours : 7AM - 7PM\nPrice : admission 10,000 UZS\n            camera 7,000 UZS\nAddress : Shah-i-Zinda St, Samarkand\nTel : (+998)71 233 53 82",
+//                        "Samarkand’s most moving and beloved site is this stunning avenue of mausoleums, which contains some of the richest tilework in the Muslim world. The name, which means ‘Tomb of the Living King’, refers to its original, innermost and holiest shrine – a complex of cool, quiet rooms around what is probably the grave of Qusam ibn-Abbas, who is said to have brought Islam to this area in the 7th century. The most stunning Timurid-era tilework dates from 14th and 15th centuries.\n" +
+//                                "\nA shrine to Qusam, a cousin of the Prophet Mohammed, existed here on the edge of Afrosiab for around seven centuries before Timur (Tamerlane) and later Ulugbek buried their family and favourites near the sanctity of the original shrine.\n" +
+//                                "\nThe most beautiful tomb is the Shodi Mulk Oko Mausoleum (1372), resting place of a sister and niece of Timur, second on the left after the entry stairs. The exquisite majolica and terracotta work here – notice the minuscule amount of space between the tiles – was of such exceptional quality that it merited almost no restoration.\n" +
+//                                "\nAfter remarkably surviving more than seven centuries with only minor touch-up work, many of the tombs were aggressively and controversially restored in 2005. As a result, much of the brilliant mosaic, majolica and terracotta work you see today is not original.\n" +
+//                                "\nShah-i-Zinda is an important place of pilgrimage, so enter with respect and dress conservatively. Just outside the entrance are the foundations of a 15th-century tahorathana (bathhouse). At the end of the pathway between the mausoleums, the complex opens up into Samarkand's main cemetery, which is a fascinating place to walk."));
+//        sights.add(
+//                new Sights(1,
+//                        "Bibi-Khanym Mosque",
+//                        "mosque in Samarkand",
+//                        R.drawable.sights_samarkand_bibi_khanym,
+//                        "Hours : 8AM - 8PM\nPrice : admission 22,000 UZS\n            camera 5,000 UZS\nAddress : Bibikhonim St, Samarqand\nTel : (+998)97 793 46 75",
+//                        "The enormous congregational Bibi-Khanym Mosque, northeast of the Registan, was financed from the spoils of Timur's invasion of India and must have been the jewel of his empire. Once one of the Islamic world’s biggest mosques (the cupola of the main mosque is 41m high and the pishtak or entrace portal, 38m), it pushed contemporary construction techniques to the limit, so much so that the dome started crumbling even before construction had finished.\n" +
+//                                "\nThe mosque partially collapsed in an earthquake in 1897 before being rebuilt in the 1970s and more rapidly in the years after independence.\n" +
+//                                "\nLegend says that Bibi-Khanym, Timur’s Chinese wife, ordered the mosque built as a surprise while he was away. The architect fell madly in love with her and refused to finish the job unless he could give her a kiss. The smooch left a mark and Timur, on seeing it, executed the architect and decreed that women should henceforth wear veils so as not to tempt other men.\n" +
+//                                "\nThe interior courtyard contains an enormous marble Quran stand that lends some scale to the place. Local lore has it that any woman who crawls under the stand will have lots of children. The courtyard also contains two smaller mosques. The one on the left as you enter through the enormous main gate has an impressive unrestored interior festooned with Arabic calligraphy."));
+//        sights.add(
+//                new Sights(1,
+//                        "Tilla-Kari Medressa",
+//                        "islamic Site in Samarkand",
+//                        R.drawable.sights_samarkand_tilla_kari,
+//                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
+//                        "On the northern side of the Registan is the Tilla-Kari (Gold-Covered) Medressa, completed in 1660, with a pleasant, gardenlike courtyard. The highlight here is the mosque, which is on the left-hand side of the courtyard and is stunningly decorated with blue and gold to symbolise Samarkand’s wealth. The mosque’s delicate ceiling, oozing gold leaf, is flat but its tapered design makes it look domed from the inside. The result is breathtaking.\n" +
+//                                "\nInside the mosque is a fascinating picture gallery featuring blown-up B&W photos of old Samarkand. Several shops sell prints of these old photos."));
+//        sights.add(
+//                new Sights(1,
+//                        "Ulugbek Medressa",
+//                        "islamic site in Samarkand",
+//                        R.drawable.sights_samarkand_ulugbek,
+//                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
+//                        "The Ulugbek Medressa, on the western side of the Registan, is the square's original medressa, finished in 1420 under Ulugbek who is said to have taught mathematics here (the stars on the portal reflect Ulugbek's love of astronomy). Beneath the little corner domes were lecture halls, now housing displays on Ulugbek, and at the rear there is a large mosque with a beautiful blue painted interior and an austere teaching room to one side.\n" +
+//                                "\nPolice guards occasionally offer to clandestinely escort visitors to the top of the medressa's minaret for around US$10."));
+//        sights.add(
+//                new Sights(1,
+//                        "Sher Dor Medressa",
+//                        "islamic site in Samarkand",
+//                        R.drawable.sights_samarkand_sherdor,
+//                        "Hours : 8AM - 7PM (Apr - Oct)\n             9AM - 5PM (Nov - Mar)\nAddress : Registan St, Samarkand",
+//                        "The entrance portal of the Registan's Sher Dor (Lion) Medressa, opposite the Ulugbek Medressa and finished in 1636, is decorated with roaring felines that look like tigers but are meant to be lions. The lions, the deer they are chasing and the Mongolian-faced, Zorostrian-inspired suns rising from their backs are all unusual, flouting Islamic prohibitions against the depiction of live animals. It took 17 years to build but hasn’t held up as well as the Ulugbek Medressa, built in just three years."));
+//        sights.add(
+//                new Sights(1,
+//                        "Afrosiab Museum",
+//                        "museum in Samarkand",
+//                        R.drawable.sights_samarkand_afrosiab,
+//                        "Hours : 9AM - 6PM\nPrice : admission 22,000 UZS\n            guide 20,000 UZS\nAddress : Tashkent Road, Samarkand",
+//                        "The Afrosiab Museum was built around one of Samarkand’s more important archaeological finds, a chipped 7th-century fresco of the Sogdian King Varkhuman (r 650–670) receiving ranks of foreign dignitaries (including Chinese envoys carrying silk), while sitting astride elephants, camels and horses. You’ll see reproductions of this iconic fresco throughout the country. It was only discovered in 1965 during the construction of Toshkent Road.\n" +
+//                                "\nThe left-hand wall depicts red- and white-faced dignitaries leading geese and horses on a sacrificial procession, while the right wall shows the Chinese Tang emperor Gaozong hunting panthers.\n" +
+//                                "\nThe 2nd floor of the museum deals with the 11 distinct layers of the archaeological site; at the time of research it was closed due to water damage. It's worth catching the short film explaining the murals and their French-sponsored renovation."));
     }
 
     private void Khiva() { }

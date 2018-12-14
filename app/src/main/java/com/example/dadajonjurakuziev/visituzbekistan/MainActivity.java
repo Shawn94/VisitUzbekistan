@@ -1,5 +1,6 @@
 package com.example.dadajonjurakuziev.visituzbekistan;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -7,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,16 +17,19 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout NavGridBar;
-    CardView cvHome, cvHotels, cvRentalCar, cvVideos, cvAboutUs, cvMap;
+    private static final String TAG = "MainActivity";
+    private LinearLayout NavGridBar;
     ImageButton navButton;
-    SearchView search;
-    RelativeLayout top_bar_relative;
-    LinearLayout main_bg;
-    Button citiesBtn;
-    TextView title_uzb;
+    private SearchView search;
+    private RelativeLayout top_bar_relative;
+    private LinearLayout main_bg;
+    private Button citiesBtn;
+    private TextView title_uzb;
+    private static final int ERROR_DIALOG_REQUEST = 9001;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +43,11 @@ public class MainActivity extends AppCompatActivity {
         citiesBtn = findViewById(R.id.citiesBtn);
         title_uzb = findViewById(R.id.title_uzb);
 
-        cvHome = findViewById(R.id.btnHome);
-        cvHotels = findViewById(R.id.btnHotels);
-        cvRentalCar = findViewById(R.id.btnRentalCar);
-        cvVideos = findViewById(R.id.btnVideos);
-        cvAboutUs = findViewById(R.id.btnAboutUs);
-        cvMap = findViewById(R.id.btnMap);
+        CardView cvHome = findViewById(R.id.btnHome);
+        CardView cvHotels = findViewById(R.id.btnHotels);
+        CardView cvRentalCar = findViewById(R.id.btnRentalCar);
+        CardView cvVideos = findViewById(R.id.btnVideos);
+        CardView cvAboutUs = findViewById(R.id.btnAboutUs);
 
 
         /*Change color of text and hint text*/
@@ -94,14 +98,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        cvMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Clicked on Map", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, MainMapActivity.class);
-                startActivity(intent);
-            }
-        });
+        if(isServiceOk()){
+            init();
+
+
+        }
 
         citiesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,9 +112,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
+
+    private void init(){
+        CardView cvMap = findViewById(R.id.btnMap);
+        cvMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Clicked on Map", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MainMapActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     boolean isVisible = true;
     public void navBarShowUp(View view) {
         if (isVisible) {
@@ -139,5 +151,26 @@ public class MainActivity extends AppCompatActivity {
             citiesBtn.setTextColor(0xffffffff);
             isVisible = true;
         }
+    }
+
+    public boolean isServiceOk(){
+
+        Log.d(TAG,"isServiceOk: checking google services version");
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(MainActivity.this);
+        if(available == ConnectionResult.SUCCESS){
+            //everything is fine and the user can make map reques
+            Log.d(TAG,"isServiceOk: Google Play Services is working");
+            return true;
+        }
+        else if(GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            //an error occured but we can resolve it
+            Log.d(TAG,"is ServiceOk: an error occured but we can fix it");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(MainActivity.this,available,ERROR_DIALOG_REQUEST);
+            dialog.show();
+        }
+        else{
+            Toast.makeText(this,"You can`t make map request", Toast.LENGTH_SHORT).show();
+        }
+        return false;
     }
 }

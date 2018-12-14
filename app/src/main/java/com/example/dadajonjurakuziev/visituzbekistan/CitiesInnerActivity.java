@@ -229,7 +229,7 @@ public class CitiesInnerActivity extends AppCompatActivity {
                 new NavButtons(1,
                         R.drawable.map,
                         "Map",
-                        "in Samarkand",
+                        "Samarkand",
                         R.drawable.samarkand));
     }
 

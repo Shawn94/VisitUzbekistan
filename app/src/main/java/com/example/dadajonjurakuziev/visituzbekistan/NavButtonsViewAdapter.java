@@ -56,7 +56,8 @@ public class NavButtonsViewAdapter extends RecyclerView.Adapter<NavButtonsViewAd
                 navBtnContext.startActivity(intent);
             }
             if (navButtons.getBtn_name().equals("Map")){
-                Intent intent = new Intent(navBtnContext, MapActivity.class);
+                Intent intent = new Intent(navBtnContext, MainMapActivity.class);
+                intent.putExtra("map_city_title", navButtons.getBtn_city_title());
                 navBtnContext.startActivity(intent);
             }
             }
