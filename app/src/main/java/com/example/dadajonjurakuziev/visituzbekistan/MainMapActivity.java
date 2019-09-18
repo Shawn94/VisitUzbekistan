@@ -57,7 +57,6 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
         GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener,TaskLoadedCallback {
 
     private static final LatLng Uzb = new LatLng(41.377491, 64.585262);
-    private static final MarkerOptions REGISTAN = new MarkerOptions().position(new LatLng(39.654799, 66.975715));
     private static final MarkerOptions Tash_Airport = new MarkerOptions().position((new LatLng(41.263057, 69.278429)));
 
     //Origin and Destionation MarkerOptions vars for direction
@@ -90,6 +89,7 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
     private Marker mMarker;
     private String url;
     private String cities;
+    Location currentLocation;
 
 
     //initialize MarkerActivity class
@@ -106,12 +106,11 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
         Toast.makeText(this, "Map is ready", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onMapReady: map is ready");
         mMap = googleMap;
+        moveCamera(Uzb, 5f, "Uzbekistan");
 
+        if(cities!= null)
+            cameraZoom();
 
-        if (cities.equals("Samarkand"))
-            moveCamera(new LatLng(39.658678, 66.977348), 15f, cities);
-        else
-            moveCamera(Uzb, 5f, "Uzbekistan");
         mMap.clear();
         /*String uri = String.format(Locale.ENGLISH, "geo:%f,%f", 41.377491, 64.585262);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
@@ -322,7 +321,8 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: clicked gps icon");
-                getDeviceLocation();
+                moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), DEFAULT_ZOOM,
+                        "My location");
             }
         });
         hideSoftKeyboard();
@@ -394,9 +394,7 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
                     public void onComplete(@NonNull Task task) {
                         if (task.isSuccessful() && task.getResult() != null) {
                             Log.d(TAG, "onComplete: found location!");
-                            Location currentLocation = (Location) task.getResult();
-                            moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), DEFAULT_ZOOM,
-                                    "My location");
+                            currentLocation = (Location) task.getResult();
                             //origin of directions, as we use current location as origin we initialize it here if location is successful
                             Origin = new MarkerOptions().position(new LatLng(currentLocation.getLatitude(),currentLocation.getLongitude()));
                         } else {
@@ -439,6 +437,7 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
             mMap.addMarker(new MarkerOptions().position(latLng));
         }
 
+        mMarkerAction.onMapReady(mMap);
         hideSoftKeyboard();
     }
 
@@ -449,7 +448,7 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
             MarkerOptions options = new MarkerOptions()
                     .position(latLng)
                     .title(title);
-            mMap.addMarker(options);
+            //mMap.addMarker(options);
         }
         hideSoftKeyboard();
     }
@@ -508,6 +507,16 @@ public class MainMapActivity extends AppCompatActivity implements OnMapReadyCall
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(mSearchText.getWindowToken(), 0);
+    }
+
+//camera zoom on map icon click in specific cities
+    public void cameraZoom(){
+
+        switch (cities){
+            case "Samarkand":
+                moveCamera(new LatLng(39.658678, 66.977348), 13f, cities);
+                break;
+        }
     }
     /*
     ----------------------- google places API autocomplete suggestion
